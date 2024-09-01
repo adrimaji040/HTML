@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - On the Grid</title>
+  <link rel='stylesheet' href='https://imdac.github.io/css/codepen/javascript-exercises.css'>
+<link rel='stylesheet' href='https://imdac.github.io/css/codepen/gridline.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="container">
+  <h4>Field 1</h4>
+  <div class="field field-1">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+  <h4>Field 2</h4>
+  <div class="field field-2">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+  <h4>Field 3</h4>
+  <div class="field field-3">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+  <h4>Field 4</h4>
+  <div class="field field-4">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+  <h4>Field 5</h4>
+  <div class="field field-5">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+  <h4>Field 6</h4>
+  <div class="field field-6">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+  <h4>Field 7</h4>
+  <div class="field field-7">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+  <h4>Field 8</h4>
+  <div class="field field-8">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+  <h4>Field 9</h4>
+  <div class="field field-9">
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+  </div>
+</main>
+<div class="instructions">
+<h2>On the Grid</h2>
+<p>Use what you have learned about CSS Grid to layout the fields in different patterns. Use the <code>:nth-child()</code> function to target specific blocks.</p>
+<p><strong>Note:</strong> The <code>grid-gap</code> property has been set to <code>5px</code> for all fields.</p>
+<ol>
+<li>
+<p>Use the <code>display</code> property to create a grid of <strong>1 column</strong> and <strong>3 rows</strong> that matches the following layout.<br><img src="https://imdac.github.io/images/codepen/gridline-field-1.png" alt="field 1"></p>
+</li>
+<li>
+<p>Use the <code>display</code> and <code>grid-template-columns</code> properties to create a grid of <strong>3 columns</strong> and <strong>1 row</strong> that matches the following layout.<br><img src="https://imdac.github.io/images/codepen/gridline-field-2.png" alt="field 2"></p>
+</li>
+<li>
+<p>Use the <code>display</code>, <code>grid-template-columns</code> and <code>grid-template-rows</code> properties to create a grid of <strong>4 columns</strong> and <strong>2 rows</strong> that matches the following layout. The first row should have a height <code>50px</code> and the second row should have a height of <code>100px</code>. <br><img src="https://imdac.github.io/images/codepen/gridline-field-3.png" alt="field 3"></p>
+</li>
+<li>
+<p>Use the <code>display</code>, <code>grid-template-columns</code>, <code>justify-content</code> and <code>align-content</code> properties to create a grid of <strong>3 columns</strong> and <strong>1 row</strong> that matches the following layout. Each column should have a width of <code>50px</code>.<br><img src="https://imdac.github.io/images/codepen/gridline-field-4.png" alt="field 4"></p>
+</li>
+<li>
+<p>Use the <code>display</code>, <code>grid-template-columns</code>, <code>align-items</code>, and <code>align-self</code> properties to create a grid of <strong>3 columns</strong> and <strong>1 row</strong> that matches the following layout.<br><img src="https://imdac.github.io/images/codepen/gridline-field-5.png" alt="field 5"></p>
+</li>
+<li>
+<p>Use the <code>display</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, and <code>grid-column</code> properties to create a grid with <strong>3 columns</strong> and <strong>3 rows</strong> that matches the following layout.<br><img src="https://imdac.github.io/images/codepen/gridline-field-6.png" alt="field 6"></p>
+</li>
+<li>
+<p>Use the <code>display</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>grid-column</code> and <code>grid-row</code> properties to create a grid with <strong>4 columns</strong> and <strong>4 rows</strong> that matches the following layout.<br><img src="https://imdac.github.io/images/codepen/gridline-field-7.png" alt="field 7"></p>
+</li>
+<li>
+<p>Use the <code>display</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>grid-column</code> and <code>grid-row</code> properties to create a grid with <strong>3 columns</strong> and <strong>3 rows</strong> that matches the following layout. <strong>Note:</strong> Block 1 is overlapped by both block 2 and block 3.<br><img src="https://imdac.github.io/images/codepen/gridline-field-8.png" alt="field 8"></p>
+</li>
+<li>
+<p>Use the <code>display</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>grid-template-areas</code>, and <code>grid-area</code> properties to create a grid with <strong>5 columns</strong> and <strong>5 rows</strong> that matches the following layout. <br><img src="https://imdac.github.io/images/codepen/gridline-field-9.png" alt="field 9"></p>
+</li>
+</ol>
+<!-- partial -->
+  
+</body>
+</html>

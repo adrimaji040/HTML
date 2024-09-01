@@ -1,0 +1,137 @@
+.field{
+  display: grid; 
+  gap: 0.5rem;
+}
+
+.field-1{
+   display: grid; 
+  grid-template-columns: 1fr;
+}
+
+.field-2{
+  /*grid-template-columns: 1fr 1fr 1fr; or*/
+  grid-template-columns:repeat(3, 1fr);  
+}
+
+.field-3{
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
+  grid-template-rows: 50px 100px;
+}
+
+.field-4{
+  grid-template-columns: repeat(3,50px);
+  justify-content: center;
+  align-content: center;
+}
+
+.field-5{
+  grid-template-columns: repeat(3,1fr);
+  align-items: start;  
+}
+
+.field-5 .block:nth-child(3){
+  align-self: end;
+}
+
+.field-6{
+  grip-template-columns: repeat(3,1fr);
+  grip-template-rows: repeat(3,1fr);  
+}
+
+.field-6 .block:nth-child(1){
+  grid-column: 1/ -1;
+  grid-column: 1 / 4;
+  grid-column: span 3;
+}
+
+.field-6 .block:nth-child(2){
+  grid-column: span 2;
+}
+
+.field-6 .block:nth-child(5){
+  grid-column: 2 / -1;
+  grid-column: span 2;
+}
+
+.field-7{
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,fr);   
+}
+
+.field-7 .block:nth-child(1){
+  grid-column: 1 / -1;  
+}
+
+.field-7 .block:nth-child(2){
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.field-7 .block:nth-child(3){
+  grid-column: span 2;
+  grid-row:span 2;
+}
+
+.field-7 .block:nth-child(5){
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.field-8{
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);    
+}
+
+.field-8 .block:nth-child(1){
+  grid-column: 1 / 3;
+  grid-row: 1 /3;
+}
+
+.field-8 .block:nth-child(2){
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
+.field-8 .block:nth-child(3){
+  grid-column: 1 / -1;
+  grid-row: 2 / span 2;
+}
+
+.field-9{
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-template-areas:
+    "i1 i1 i1 i1 i1"
+    "i2 i2 i4 i4 i3"
+    "i2 i2 i4 i4 i3"
+    "i2 i2 i6 i5 i3"
+    "i7 i7 i7 i7 i7"
+}
+
+.field-9 .block:nth-child(1){
+  grid-area: i1;
+}
+
+.field-9 .block:nth-child(2){
+  grid-area: i2;
+}
+
+.field-9 .block:nth-child(3){
+  grid-area: i3;
+}
+
+.field-9 .block:nth-child(4){
+  grid-area: i4;
+}
+
+.field-9 .block:nth-child(5){
+  grid-area: i5;
+}
+
+.field-9 .block:nth-child(6){
+  grid-area: i6;
+}
+
+.field-9 .block:nth-child(7){
+  grid-area: i7;
+}
