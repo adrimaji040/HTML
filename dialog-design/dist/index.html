@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Dialog Design</title>
+  <link rel='stylesheet' href='https://imdac.github.io/css/codepen/labs.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="container">
+  <button id="open" class="btn">Open Dialog</button>
+  <dialog id="dialog">
+    <h2>Alert </h2>
+    <p> You may close this modal </p>
+    <form method="dialog">
+      <button class="button"> OK</button>
+    </form>
+  </dialog>
+</main>
+<div class="instructions">
+<h2>Dialog Design</h2>
+<p>Practice implementing and styling a modal using the <code>&lt;dialog&gt;</code> tag.</p>
+<ol>
+<li>Click the 'Open Dialog' button to show the modal.</li>
+<li>Use CSS to change the <code>width</code> and <code>border</code> of the modal. <strong>Hint:</strong> The <code>dialog</code> selector can be used.</li>
+<li>Add an <code>&lt;h2&gt;</code> and <code>&lt;p&gt;</code> to the modal.</li>
+<li>Use CSS and the <code>::backdrop</code> pseudo-element to add a backdrop behind the modal.</li>
+<li>Add a <code>&lt;form&gt;</code> with a <code>method</code> of <code>dialog</code> to the dialog. Within the <code>&lt;form&gt;</code> add a <code>&lt;button&gt;</code>. This will allow the user to close the modal.</li>
+<li>Add additional style to the modal and button.</li>
+</ol>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

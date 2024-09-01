@@ -1,0 +1,18 @@
+dialog{
+  width: 250px;
+  border: 1px solid purple;
+  background-color: yellow; 
+}
+
+dialog::backdrop{
+  background-color: rgba(60,10,40,0.5);
+  
+}
+.button{
+  background-color:green;
+  border: 5px solid green;
+  color:  #fff;
+  font-size: 1rem;
+  font-weight:bold;
+  border-radius: 8px;
+}
