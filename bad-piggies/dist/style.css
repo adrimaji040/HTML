@@ -1,0 +1,39 @@
+/*piggy 1*/
+ main div{
+  background-color: blue;
+}
+/*piggy 2*/
+div.piggy-2{
+  background-color: green;
+}
+
+/*piggy 3*/
+main div.piggy-3{
+  background-color: orange;
+}
+
+/*piggy 4*/
+div.piggy.piggy-4{
+  background-color: purple;
+}
+
+/*piggy 5*/
+ section.piggies .piggy.piggy-5{
+  background-color: pink;
+}
+
+/*Piggy 6*/
+ div#piggy6{
+  background-color: grey;
+}
+
+/*peggy7*/
+#piggies
+div#piggy7.piggy.piggy-7{
+ background-color: white;
+}
+
+/**peggi 8*/
+.piggy-8{
+  background-color: gold ;
+}
