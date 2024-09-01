@@ -1,0 +1,12 @@
+body {
+/*   background-color: #fff; */
+  overflow: auto;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  
+  height: 100vh;
+}
