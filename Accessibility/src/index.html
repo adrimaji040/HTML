@@ -1,0 +1,71 @@
+<main class="container">
+  <nav class="nav">
+    <a href="#inner" class="nav-link">The Inner Planets</a>
+    <a href="#outer" class="nav-link">The Outer Planets</a>
+  </nav>
+  <header class="header">
+    <h1>Our Solar System</h1>
+  </header>
+  <article class="article">
+    <p>Our solar system is made up of eight planets, several dwarf planets, numerous moons, and two astroid belts.
+    <h2 id="inner">The Inner Planets</h2>
+    <p>The inner rocky planets, which includes Earth, are smaller than the outer planets. <a
+        href="https://en.wikipedia.org/wiki/Solar_System#Inner_planets" class="article-link"> Read more about inner
+        planerts from Wikipedia.</a></p>
+    <h3 id="mercury">Mercury</h3>
+    <p>Mercury, the smallest and closest planet to the Sun, is a world of extremes.</p>
+    <h3 id="venus">Venus</h3>
+    <p>Venus, often called Earth's "sister planet," boasts a thick atmosphere and a surface shrouded in mystery.</p>
+    <h3 id="earth">Earth</h3>
+    <img src="https://zoodinkers.com/images/earth.jpg" alt="An image of Earth from space">
+    <p>Our own beloved Earth, the cradle of life, orbits the Sun accompanied by a single, magnificent moon.</p>
+    <h3 id="mars">Mars</h3>
+    <p>Mars, the "Red Planet," is adorned with a pair of captivating moons – Phobos and Deimos.</p>
+    <h2 id="outer">The Outer Planets</h2>
+    <p>The outer planets, often known as the gas giants, are many times larger than the inner planets. <a
+        href="https://en.wikipedia.org/wiki/Solar_System#Outer_planets" class="article-link">Learn more about Outer
+        planer in this link.</a></p>
+    <h3 id="jupiter">Jupiter</h3>
+    <p>Jupiter, the largest planet in the solar system, has a mass that is two and half times that of all the other
+      planets combined.</p>
+    <h3 id="saturn">Saturn</h3>
+    <p>Saturn, the second largest planet in the solar system, is surrounded by an extensive rign system.</p>
+    <h3 id="uranus">Uranus</h3>
+    <p>Uranus, one of the two ice giants in our solar system, has a near 90 degree tilt on its axis.</p>
+    <h3>Neptune</h3>
+    <p>Neptune, the furthest planet from the sun, has 16 moons and a ring system.</p>
+  </article>
+  <footer class="footer">
+    <p>Image by <a href="https://pixabay.com/users/jordygoovaerts0-750531/">jordygoovaerts0</a> from <a
+        href="https://pixabay.com/">Pixabay</a><br>Image by <a href="https://pixabay.com/users/qimono-1962238/">Arek
+        Socha</a> from <a href="https://pixabay.com/">Pixabay</a></p>
+  </footer>
+</main>
+<div class="instructions">
+
+  ## Article Accessibilies
+
+  Practice implementing accessibility techniques by refactoring the article to be more accessible.
+
+  1. Using semantic tags provides a better understanding of page structure. Use the `nav`, `article`, and `header` tags
+  instead of the generic `div` tag.
+  1. Screen readers cannot read text in images. Replace the image title with an `h1` tag containing the same text.
+  1. Noisy backgrounds can make text difficult to read. One solution is to add a transparent layer over the image.
+  **Hint:** This can be accomplished using CSS and the
+  [`linear-gradient`](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient), which can be added to
+  the `background-image` property. *Example:*<br>`background-image:
+  linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0.5))`
+  1. The `alt` attribute is used to describe the image when the user can see the image. Add an `alt` attribute to the
+  images in the article.
+  1. Heading tags help create a hierarchical structure. Use the `h1`, `h2`, and `h3` tags to create the hierarchical
+  structure. **Hint:** The article has two sections `The Inner Planets` and `The Outer Planets`. The individual planets
+  are sub-sections.
+  1. Make sure the contrast between the text and the background is adequate. **Hint:** Use the `.article` class to make
+  any changes.
+  1. Make sure the font is of adequate size and make sure there is enough between the lines. **Hint:** Use the
+  `.article` class to make any changes.
+  1. Links should be easy to spot. Use CSS to make the links stand out from the normal text. **Hint:** Use `.article a`
+  selector to make any changes. **Bonus:** Add a hover state to further emphasize the link action.
+  1. Links should also include descriptive text and 'Click here.' is not descriptive. Update the text for the article's
+  links to be more descriptive.
+</div>

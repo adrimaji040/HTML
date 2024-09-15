@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Article Accessibilities</title>
+  <link rel='stylesheet' href='https://imdac.github.io/css/codepen/labs.css'>
+<link rel='stylesheet' href='https://imdac.github.io/css/codepen/article-accessibilities.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="container">
+  <nav class="nav">
+    <a href="#inner" class="nav-link">The Inner Planets</a>
+    <a href="#outer" class="nav-link">The Outer Planets</a>
+  </nav>
+  <header class="header">
+    <h1>Our Solar System</h1>
+  </header>
+  <article class="article">
+    <p>Our solar system is made up of eight planets, several dwarf planets, numerous moons, and two astroid belts.  
+    <h2 id="inner">The Inner Planets</h2>
+    <p>The inner rocky planets, which includes Earth, are smaller than the outer planets. <a href="https://en.wikipedia.org/wiki/Solar_System#Inner_planets" class="article-link"> Read more about inner planerts from Wikipedia.</a></p>
+    <h3 id="mercury">Mercury</h3>
+    <p>Mercury, the smallest and closest planet to the Sun, is a world of extremes.</p>
+    <h3 id="venus">Venus</h3>
+    <p>Venus, often called Earth's "sister planet," boasts a thick atmosphere and a surface shrouded in mystery.</p>
+    <h3 id="earth">Earth</h3>
+    <img src="https://zoodinkers.com/images/earth.jpg" alt="An image of Earth from space">
+    <p>Our own beloved Earth, the cradle of life, orbits the Sun accompanied by a single, magnificent moon.</p>
+    <h3 id="mars">Mars</h3>
+    <p>Mars, the "Red Planet," is adorned with a pair of captivating moons – Phobos and Deimos.</p>
+    <h2 id="outer">The Outer Planets</h2>
+    <p>The outer planets, often known as the gas giants, are many times larger than the inner planets. <a href="https://en.wikipedia.org/wiki/Solar_System#Outer_planets" class="article-link">Learn more about Outer planer in this link.</a></p>
+    <h3 id="jupiter">Jupiter</h3>
+    <p>Jupiter, the largest planet in the solar system, has a mass that is two and half times that of all the other planets combined.</p>
+    <h3 id="saturn">Saturn</h3>
+    <p>Saturn, the second largest planet in the solar system, is surrounded by an extensive rign system.</p>
+    <h3 id="uranus">Uranus</h3>
+    <p>Uranus, one of the two ice giants in our solar system, has a near 90 degree tilt on its axis.</p>
+    <h3>Neptune</h3>
+    <p>Neptune, the furthest planet from the sun, has 16 moons and a ring system.</p>
+  </article>
+  <footer class="footer">
+    <p>Image by <a href="https://pixabay.com/users/jordygoovaerts0-750531/">jordygoovaerts0</a> from <a href="https://pixabay.com/">Pixabay</a><br>Image by <a href="https://pixabay.com/users/qimono-1962238/">Arek Socha</a> from <a href="https://pixabay.com/">Pixabay</a></p>
+  </footer>
+</main>
+<div class="instructions">
+<h2>Article Accessibilies</h2>
+<p>Practice implementing accessibility techniques by refactoring the article to be more accessible.</p>
+<ol>
+<li>Using semantic tags provides a better understanding of page structure. Use the <code>nav</code>, <code>article</code>, and <code>header</code> tags instead of the generic <code>div</code> tag.</li>
+<li>Screen readers cannot read text in images. Replace the image title with an <code>h1</code> tag containing the same text.</li>
+<li>Noisy backgrounds can make text difficult to read. One solution is to add a transparent layer over the image. <strong>Hint:</strong> This can be accomplished using CSS and the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient"><code>linear-gradient</code></a>, which can be added to the <code>background-image</code> property. <em>Example:</em><br><code>background-image:  linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0.5))</code></li>
+<li>The <code>alt</code> attribute is used to describe the image when the user can see the image. Add an <code>alt</code> attribute to the images in the article.</li>
+<li>Heading tags help create a hierarchical structure. Use the <code>h1</code>, <code>h2</code>, and <code>h3</code> tags to create the hierarchical structure. <strong>Hint:</strong> The article has two sections <code>The Inner Planets</code> and <code>The Outer Planets</code>. The individual planets are sub-sections.</li>
+<li>Make sure the contrast between the text and the background is adequate. <strong>Hint:</strong> Use the <code>.article</code> class to make any changes.</li>
+<li>Make sure the font is of adequate size and make sure there is enough between the lines. <strong>Hint:</strong> Use the <code>.article</code> class to make any changes.</li>
+<li>Links should be easy to spot. Use CSS to make the links stand out from the normal text. <strong>Hint:</strong> Use <code>.article a</code> selector to make any changes. <strong>Bonus:</strong> Add a hover state to further emphasize the link action.</li>
+<li>Links should also include descriptive text and 'Click here.' is not descriptive. Update the text for the article's links to be more descriptive.</li>
+</ol>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

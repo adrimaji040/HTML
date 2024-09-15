@@ -1,0 +1,20 @@
+.header {
+  background-image: 
+    linear-gradient(to left, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),
+   url(https://zoodinkers.com/images/space.jpg);
+}
+
+.article{
+  color:#333;
+  font-size: 1rem; // =16 pixels 
+  line-height: 1.4;
+}
+
+.article a{
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+.article a:hover{
+  color: royalblue;
+}
